@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='js/register.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="header__icon" id="header__icon"></a>
+    <a href="index.html" class="header__logo">OnePlus</a>
+    <nav class="menu">
+        <a href="register.html" class="hvr-underline-from-center">INSCRIPTION</a>
+        <a href="shop.html" class="hvr-underline-from-center">SHOP</a>
+    </nav>
+</header>
+
+<div class="backgroundimgbis">
+    <div class="background-textbis">
+        <h1 class="imgtxtbigmid">INSCRIPTION</h1>
+    </div>
+</div>
+
+<form onsubmit="return register(this);" class="form-horizontal" method="post">
+
+    <!-- Errors -->
+    <div class="form-group">
+        <div id="alert" class="col-md-4 col-md-offset-4 alert alert-danger">
+        </div>
+    </div>
+
+    <!-- Success -->
+    <div class="form-group">
+        <div id="alert2" class="col-md-4 col-md-offset-4 alert alert-success">
+        </div>
+    </div>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="selectciv">Civilité</label>
+        <div class="col-md-4">
+            <select id="selectciv" name="selectciv" class="form-control">
+                <option value="mr">Monsieur</option>
+                <option value="mme">Madame</option>
+                <option value="mlle">Mademoiselle</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group" id="fille">
+        <label class="col-md-4 control-label" for="Nom2">Nom de jeune fille</label>
+        <div class="col-md-4">
+            <input id="nom2" name="nom2" type="text" placeholder="" class="form-control input-md">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="nom">Nom</label>
+        <div class="col-md-4">
+            <input id="nom" name="nom" type="text" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="prenom">Prenom</label>
+        <div class="col-md-4">
+            <input id="prenom" name="prenom" type="text" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="mail">Mail</label>
+        <div class="col-md-4">
+            <input id="mail" name="mail" type="text" placeholder="" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="pseudo">Pseudo</label>
+        <div class="col-md-4">
+            <input id="pseudo" name="pseudo" type="text" placeholder="" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="password">Mot de passe</label>
+        <div class="col-md-4">
+            <input id="password" name="password" type="password" placeholder="" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="passwordconfirm">Confirmer le mot de passe</label>
+        <div class="col-md-4">
+            <input id="passwordconfirm" name="passwordconfirm" type="password" placeholder=""
+                   class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="pseudo">Code postal</label>
+        <div class="col-md-4">
+            <input id="postal" name="postal" type="text" placeholder="" class="form-control input-md">
+        </div>
+    </div>
+
+    <!-- Select Basic -->
+    <div class="form-group ville">
+        <label class="col-md-4 control-label">Ville</label>
+        <div class="col-md-4">
+            <select id="villes" name="villes" class="form-control">
+            </select>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-info" value="S'inscrire">
+        </div>
+    </div>
+</form>
+</body>
+</html>
